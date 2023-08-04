@@ -29,10 +29,7 @@ const Features = () => (
     <div className="container py-20">
       <div className="text-center m-auto mb-20 md:w-1/2">
         <h4 className="font-bold text-color-secondary mb-4">Our Future</h4>
-        <h2
-          className="text-3x1 md:text-4×1 font-bold leading-snug;
-"
-        >
+        <h2 className="text-3x1 md:text-4×1 font-bold leading-snug">
           Easy To Manage Your All Payments By Our App
         </h2>
       </div>

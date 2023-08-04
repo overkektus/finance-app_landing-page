@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '@/app/sections/Header/Header'
 import Main from '@/app/sections/Main/Main'
+import Features from '@/app/sections/Features/Features'
+import SavingMoney from '@/app/sections/SavingMoney/SavingMoney'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 // Tell Font Awesome to skip adding the CSS automatically
@@ -12,6 +14,8 @@ export default function Home() {
     <div className="bg-color-primary text-color-white tracking-wider">
       <Header />
       <Main />
+      <Features />
+      <SavingMoney />
     </div>
   )
 }
