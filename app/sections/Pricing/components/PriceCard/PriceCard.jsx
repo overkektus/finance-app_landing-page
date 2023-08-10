@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import FeatureList from './FeatureList'
 import Price from './Price'
 import BillPlan from './BillPlan'
+import Button from './Button'
 
 const PriceCard = ({ plan, isToggled }) => (
   <div className="card relative h-auto w-auto">
@@ -19,7 +20,7 @@ const PriceCard = ({ plan, isToggled }) => (
 
       <FeatureList value={plan.featuresList} />
 
-      <button className="card_btn">Get Started</button>
+      <Button>Get Started</Button>
     </div>
 
     {/* back side */}
@@ -35,7 +36,7 @@ const PriceCard = ({ plan, isToggled }) => (
 
       <FeatureList value={plan.featuresList} />
 
-      <button className="card_btn">Get Started</button>
+      <Button>Get Started</Button>
     </div>
   </div>
 )
