@@ -1,15 +1,14 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const colors = {
-  blob: 'bg-color-blob',
-  secondary: 'bg-color-secondary',
-}
-
-const BackgroundCircle = (props) => {
-  const color = colors[props.color] || colors.secondary
+const BackgroundCircle = ({ color, position }) => {
   return (
     <div
-      className={`w-80 h-80 ${color} absolute ${props.position} blur-2xl opacity-30 rounded-full`}
+      className={classNames(
+        'w-80 h-80 absolute ${props.position} blur-2xl opacity-30 rounded-full',
+        color,
+        position,
+      )}
     ></div>
   )
 }
